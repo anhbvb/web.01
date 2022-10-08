@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=eight">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <title>WEB-01</title>
+</head>
+<body>
+    <!------------------------------header---------------------------------->
+    <header class="header">
+        <div class="container">
+            <div class="row top-header">
+                <div class="left-header">
+                    <div class="site-nav">
+                        <div title="" class="text"><span>Hotline đặt hàng <i class="fa fa-phone"></i></span><a href="tel: 0824946881"> 0824946881</a></div>
+                    </div>
+                    <div class="">
+                        <div class="search-wrapper">
+                            <div class="input-holder">
+                                <input type="text" class="search-input" placeholder="Bạn đang cần tìm gì ?" />
+                                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                            </div>
+                            <span class="close" onclick="searchToggle(this, event);"></span>
+                        </div> 
+                    </div>
+                </div>
+                <div class="center-header">
+                    <div title="" class="logo-wrapper"><img width="50" src="./img/ta.png"></div>
+                </div>
+                <div class="right-header">
+                    <!--
+                    <div class="site-nav"><a href="#" title="" rel="nofollow">Tài khoản <i class="fa fa-user"></i></a>
+                        <div class="login">
+                            <li><a rel="nofollow" href="#" title="">Đăng nhập <i class="fa fa-arrow-right"></i></a></li>
+                            <li><a rel="nofollow" href="#" title="">Đăng ký <i class="fa fa-gear"></i></a></li>
+                        </div>
+                    </div>
+                    -->
+                    <div class="site-nav"><a href="#" title="" rel="nofollow">Giỏ hàng <i class="fa fa-cart-arrow-down"></i><span class="count_item_pr"></span></a></div>
+                    <div class="site-nav"><a href="#" title="" rel="nofollow">Thông báo <i class="fa fa-bell"></i><span class="count_item_pr"></span></a></div>
+                    <div class="site-nav"><a href="#" title="" rel="nofollow">Tài khoản <i class="fa fa-user"></i></a>
+                        <div class="login">
+                            <li><a rel="nofollow" href="#" title="">Đăng nhập <i class="fa fa-arrow-right"></i></a></li>
+                            <li><a rel="nofollow" href="#" title="">Đăng ký <i class="fa fa-gear"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------wrapper main-menu------------------------------------->
+        <div class="wrapper">
+            <nav>
+                <ul class="main-menu">
+                    <li><a title="" href="#">Trang chủ <i class="fa fa-house"></i></a></li>
+                    <li><a title="" href="#">Giới thiệu</a></li>
+                    <li><a title="" href="#">Sản phẩm</a></li>
+                    <li><a title="" href="#">Tin tức</a></li>
+                    <li><a title="" href="#">Hỏi đáp</a></li>
+                    <li><a title="" href="#">Liên hệ</a></li>
+                    <li><a title="" href="#">Hệ thống cửa hàng</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!----------------------------banner------------------------------->
+    <div id="banner">
+        <div class="container">
+            <div class="box-left">
+                <h2>
+                    <span>săn sale </span>
+                    <br>
+                    <span>giảm tới 45%</span>
+                </h2>
+                <p>hãy thêm vào giỏ hàng  <br> của bạn ngay nào</p>
+                <button>mua ngay</button>
+            </div>
+            <div class="box-right">
+                <img width="200" src="./img/A001.jpeg" alt="">
+                <img width="200" src="./img/A005.jpeg" alt="">
+                <img width="200" src="./img/A006.jpeg" alt="">
+            </div>
+            <div class="to-bottom">
+                <a href=""><img width="50" src="./img/chevron.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------slider one---------------------------------->
+    <section class="slider-one">
+        <div class="container">
+            <div class="slider-one-content">
+                <div class="slider-one-title"><h2>Áo</h2></div>
+                <div class="slider-one-container"> 
+                    <div class="slider-one-container-content">
+                        <div class="slider-one-items">
+                            <div class="slider-one-item">
+                                <img width="200" src="./img/A001.jpeg" alt="">
+                                <div class="slider-one-item-text">
+                                    <li>ao gucci</li><li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li><li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-one-item">
+                                <img width="200" src="./img/A002.jpeg" alt="">
+                                <div class="slider-one-item-text">
+                                    <li>ao gucci</li><li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li><li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-one-item">
+                                <img width="200" src="./img/A003.jpeg" alt="">
+                                <div class="slider-one-item-text">
+                                    <li>ao gucci</li><li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li><li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-one-item">
+                                <img width="200" src="./img/A004.jpeg" alt="">
+                                <div class="slider-one-item-text">
+                                    <li>ao gucci</li><li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li><li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-one-item">
+                                <img width="200" src="./img/A005.jpeg" alt="">
+                                <div class="slider-one-item-text">
+                                    <li>ao gucci</li><li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li><li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section class="slider-two">
+        <div class="container">
+            <div class="slider-two-content">
+                <div class="slider-two-title"><h2>quần</h2></div>
+                <div class="slider-two-container"> 
+                    <div class="slider-two-container-content">
+                        <div class="slider-two-items">
+                            <div class="slider-two-item">
+                                <img width="200" src="./img/quan5.jpg" alt="">
+                                <div class="slider-two-item-text">
+                                    <li>ao gucci</li>
+                                    <li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li>
+                                    <li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-two-item">
+                                <img width="200" src="./img/quan6.jpg" alt="">
+                                <div class="slider-two-item-text">
+                                    <li>ao gucci</li>
+                                    <li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li>
+                                    <li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-two-item">
+                                <img width="200" src="./img/quan7.jpg" alt="">
+                                <div class="slider-two-item-text">
+                                    <li>ao gucci</li>
+                                    <li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li>
+                                    <li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-two-item">
+                                <img width="200" src="./img/quan8.jpg" alt="">
+                                <div class="slider-two-item-text">
+                                    <li>ao gucci</li>
+                                    <li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li>
+                                    <li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                            <div class="slider-two-item">
+                                <img width="200" src="./img/quan9.jpg" alt="">
+                                <div class="slider-two-item-text">
+                                    <li>ao gucci</li>
+                                    <li><a href="">980.000<sup>₫</sup></a><span>-6%</span></li>
+                                    <li>600.000<sup>₫</sup></li>
+                                    <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    
+
+    <!-----------------cartegory-------------------------->
+    <section class="cartegory">
+        <div class="container">
+            <div class="row">
+                <!--
+                <div class="cartegory-left">
+                    <ul>
+                        <li class="cartegory-left-li">
+                            <a href="#">gucci</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">dior</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">louis vuitton</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+                                <li><a href="">sơ mi</a></li>
+                            </ul>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">dolce&gabbana</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+                                <li><a href="">sơ mi</a></li>
+                            </ul>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">hermès</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+                            </ul>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">burberry</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+                            </ul>
+                        </li>
+                        <li class="cartegory-left-li"><a href="#">versace</a>
+                            <ul>
+                                <li><a href="">giày nam</a></li>
+                                <li><a href="">dép nam</a></li>
+                                <li><a href="">quần bò</a></li>
+                                <li><a href="">Quần âu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                -->
+                <div class="cartegory-right row">
+                    <div class="cartegory-right-top-item"><p>sản phẩm mới</p></div>
+                    <div class="cartegory-right-top-item"><button><span>Bộ lọc </span><i class="fas fa-caret-down"></i></button></div>
+                    <div class="cartegory-right-top-item">
+                        <select name="" id=""><option value="">Sắp xếp</option><option value="">Giá cao đến thấp</option><option value="">Giá thấp đến cao</option></select>
+                    </div>
+                    <div class="cartegory-right-content row">
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay1.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay2.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay3.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay4.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay5.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay6.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay7.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                        <div class="cartegory-right-content-item"><img class="zoom" src="./img/giay8.jpg" alt=""><h1>bộ authentic MS A001</h1><p>980.000<sup>₫</sup></p><li>1.000.000<sup>₫</sup></li></div>
+                    </div> 
+                    <div class="cartegory-right-bottom row">
+                        <div class="cartegory-right-bottom-items"><p>Hiển thị 8 <span>|</span> 100 sản phẩm </p></div>
+                        <div class="cartegory-right-bottom-items"><p><span>&#171;</span>1 2 3 4<span>&#187;</span> Trang cuối</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--product-->
+    <section class="product">
+        <div class="container">
+            <div class="product-top row"><p>trang chủ <i class="fa fa-house"></i></p><span>&rarr;</span><p>áo</p><span>&rarr;</span><p>áo thun</p></div>
+            <div class="product-content row">
+                <div class="product-content-left row">
+                    <div class="product-content-left-big-img"><img src="./img/A001.jpeg" alt=""></div>
+                    <div class="product-content-left-small-img"><img src="./img/A001.jpeg" alt=""><img src="./img/A002.jpeg" alt=""><img src="./img/A003.jpeg" alt=""></div>
+                </div>
+                <div class="product-content-right">
+                    <div class="product-content-right-product-name"><h1>áo thun</h1><p>msp: a001</p></div>
+                    <div class="product-content-right-product-price"><p>980.000<sup>₫</sup></p></div>
+                    <div class="product-content-right-product-color">
+                        <p><span style="font-weight: bold" >màu sắc:</span>xanh than<span style="color:rgb(255, 1, 1);">*</span></p>
+                        <div class="product-content-right-product-color-img"><img src="./img/xanh.png" alt=""> <!--mausac--></div>
+                    </div>
+                    <div class="product-content-right-product-size">
+                        <p style="font-weight: bold; font-size: 13px;">size:</p>
+                        <div class="size"><span>s</span><span>m</span><span>l</span><span>xl</span><span>xxl</span></div>
+                    </div>
+                    <p style="color: #585858; font-size: 11px;">vui lòng chọn size<span style="color:rgb(255, 1, 1);">*</span></p>
+                    <div class="quantity"><p style="font-weight: bold; font-size: 13px;">số lượng:</p><input type="number" min="0" value="1"></div>
+                    <div class="product-content-right-product-button">
+                        <button><i class="fas fa-shopping-cart"></i>mua hàng</button>
+                        <button><i class="fas fa-cart-arrow-down"></i> thêm vào giỏ hàng</button>
+                    </div>
+                    <div class="product-content-right-product-icon">
+                        <div class="product-content-right-product-icon-item"><i class=" fas fa-phone-alt"></i><p><a href="tel: 0824946881">hotline</a></p></div>
+                        <div class="product-content-right-product-icon-item"><i class=" fas fa-comments"></i><p>comment</p></div>
+                        <div class="product-content-right-product-icon-item"><i class=" fas fa-envelope"></i><p>mail</p></div>
+                    </div>
+                    <div class="product-content-right-product-QR"><img width="50" src="./img/qr.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<div id="wp">
+    <div id="wp-container">
+        <div id="wp-products">
+            <h2>top san pham</h2>
+            <ul id="list-products">
+                <div class="item"><img src="./img/dep1.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep2.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep3.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep4.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep5.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep6.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep7.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep8.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep4.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+                <div class="item"><img src="./img/dep2.jpg"><div class="name">ao 1</div><div class="desc">mo ta</div><div class="price">$100</div></div>
+            </ul>
+            <div class="list-page">
+                <div class="item"><a href="">1</a></div>
+                <div class="item"><a href="">2</a></div>
+                <div class="item"><a href="">3</a></div>
+                <div class="item"><a href="">4</a></div>
+                <div class="item"><a href="">5</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-one">
+                    <div class="footer-one-logo"><img width="60px" src="./img/ta.png"></div>
+                    <ul class="info">
+                        <li><span><i class="fa fa-location-dot"></i></span>
+                            <span>Số 27, Tổ 6, Phú Lương, HĐ, HN.</span></li>
+                        <li>                
+                            <span><i class="fa fa-phone"></i></span>
+                            <span><a href="tel: 0824946881">0824.946.881</a></span>
+                        </li>
+                        <li>
+                            <p><i class="fa fa-envelope"></i>
+                            <span>anhbvb@yahoo.com</span><br/></p><span>hkd: Phạm Đoàn Thế Anh</span><br/><span>mst: 08G8002386</span><br/><span>Cổ Tung, Nam Hùng, Nam Trực,</span><br/>Nam Định.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-two"><h2>hướng dẫn</h2>
+                    <ul><li><a href="#">hướng dẫn mua hàng</a></li><li><a href="#">hướng dẫn thanh toán</a></li><li><a href="#">hướng dẫn giao nhận</a></li><li><a href="#">điều khoản dịch vụ</a></li></ul>
+                </div>
+                <div class="footer-two">
+                    <h2>chính sách</h2>
+                    <ul><li><a href="#">chính sách mua hàng</a></li><li><a href="#">chính sách đổi trả</a></li><li><a href="#">chính sách vận chuyển</a></li><li><a href="#">chính sách bảo hành</a></li></ul>
+                </div>
+                <div class="footer-four">
+                    <h2>theo dõi chúng tôi trên</h2>
+                    <div class="social-network"><a href="https://www.facebook.com/anhbvb"><i class="fab fa-facebook"></i></a>
+                                                <a href="https://www.instagram.com/anhbvb"><i class="fab fa-instagram"></i></a>
+                                                <a href="https://www.tiktok.com/@anhbvb"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="visa">
+                        <li>thanh toán</li>
+                        <img src="./img/payment_1.svg"/>
+                        <img src="./img/payment_2.svg"/>
+                        <img src="./img/payment_3.svg"/>
+                        <img src="./img/payment_4.svg"/>
+                        <img src="./img/payment_5.svg"/>
+                    </div>
+                    <div class="vc">
+                        <li>đơn vị vận chuyển</li>
+                        <img src="./img/vc1.png"/>
+                        <img src="./img/vc2.jfif"/>
+                        <img src="./img/vc3.png"/>
+                        <img src="./img/vc4.png"/>
+                        <img src="./img/vc5.png"/>
+                    </div>
+                    <div class="proof">
+                        <img width="100px" src="./img/bo-cong-thuong.png"/>
+                        <img width="70px" src="./img/handle_cert.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="marquee-top">
+        <marquee>hotline: 0824946881 THEANH boutique xin hân hạnh kính chào quý khách, được phục vụ quý khách hàng là niềm 
+            vinh hạnh đối với chúng tôi.    Copyright © 2022 | Bản quyền thuộc về ANH BVB
+        </marquee>
+    </div>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <div title="Về đầu trang" id="top-up"><i class="fas fa-chevron-up"></i></div>
+    
+    <script src="./main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
